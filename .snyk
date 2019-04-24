@@ -1,0 +1,35 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - compression-webpack-plugin > node-zopfli > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-04-24T02:24:57.624Z'
+    - compression-webpack-plugin > node-zopfli > node-pre-gyp > hawk > hoek:
+        patched: '2019-04-24T02:24:57.624Z'
+    - compression-webpack-plugin > node-zopfli > node-pre-gyp > hawk > sntp > hoek:
+        patched: '2019-04-24T02:24:57.624Z'
+    - compression-webpack-plugin > node-zopfli > node-pre-gyp > request > hawk > hoek:
+        patched: '2019-04-24T02:24:57.624Z'
+    - compression-webpack-plugin > node-zopfli > node-pre-gyp > hawk > cryptiles > boom > hoek:
+        patched: '2019-04-24T02:24:57.624Z'
+    - compression-webpack-plugin > node-zopfli > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2019-04-24T02:24:57.624Z'
+    - compression-webpack-plugin > node-zopfli > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2019-04-24T02:24:57.624Z'
+    - compression-webpack-plugin > node-zopfli > node-pre-gyp > hawk > boom > hoek:
+        patched: '2019-04-24T02:24:57.624Z'
+  'npm:tunnel-agent:20170305':
+    - image-webpack-loader > imagemin > imagemin-gifsicle > gifsicle > bin-build > download > caw > tunnel-agent:
+        patched: '2019-04-24T02:24:57.624Z'
+    - image-webpack-loader > imagemin > imagemin-jpegtran > jpegtran-bin > bin-build > download > caw > tunnel-agent:
+        patched: '2019-04-24T02:24:57.624Z'
+    - image-webpack-loader > imagemin > imagemin-optipng > optipng-bin > bin-build > download > caw > tunnel-agent:
+        patched: '2019-04-24T02:24:57.624Z'
+    - image-webpack-loader > imagemin > imagemin-gifsicle > gifsicle > bin-wrapper > download > caw > tunnel-agent:
+        patched: '2019-04-24T02:24:57.624Z'
+    - image-webpack-loader > imagemin > imagemin-jpegtran > jpegtran-bin > bin-wrapper > download > caw > tunnel-agent:
+        patched: '2019-04-24T02:24:57.624Z'
+    - image-webpack-loader > imagemin > imagemin-optipng > optipng-bin > bin-wrapper > download > caw > tunnel-agent:
+        patched: '2019-04-24T02:24:57.624Z'
