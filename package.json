@@ -6,7 +6,8 @@
   "scripts": {
     "build": "babel toolkit --out-dir dist",
     "watch": "babel toolkit --watch --out-dir dist",
-    "prepublish": "npm run build"
+    "prepublish": "npm run snyk-protect; npm run build",
+    "snyk-protect": "snyk protect"
   },
   "bin": {
     "dev-toolkit": "bin/dev-toolkit.js"
@@ -97,6 +98,8 @@
     "webpack": "^1.13.1",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.10.0",
-    "yargs": "^4.8.1"
-  }
+    "yargs": "^4.8.1",
+    "snyk": "^1.161.1"
+  },
+  "snyk": true
 }
